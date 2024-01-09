@@ -1,0 +1,59 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  transition: background-color 350ms;
+}
+
+.app_outer {
+  flex: 1;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.app_boards {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+  padding-inline: 2rem;
+  color: var(--text-color);
+}
+
+/* Better scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f2f2f2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+.add__board > textarea,
+.card_detail > textarea {
+  border: 1px solid #ccc; /* Slightly increased border width for clarity */
+  height: 2rem;
+}
+
+.card__values > p {
+  background: #eee; /* Lightened background color for better readability */
+}
+
+.cardinfo__editable {
+  width: max-content;
+  margin: 0 auto; /* Center the element */
+}

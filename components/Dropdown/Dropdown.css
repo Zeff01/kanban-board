@@ -1,0 +1,43 @@
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background-color: var(--drop-down-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 120px;
+  max-width: 250px;
+  max-height: 390px;
+  overflow-y: auto;
+  z-index: 10;
+  padding: 10px;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform-origin: top right;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top right;
+  transform-style: preserve-3d;
+  transform-box: fill-box;
+}
+
+.dropdown.show {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.dropdown > * {
+  margin-bottom: 8px;
+}
+
+/* Example: Style for dropdown items */
+.dropdown-item {
+  color: var(--text-color);
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}

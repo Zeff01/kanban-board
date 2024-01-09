@@ -1,0 +1,12 @@
+.tag {
+  background-color: #4a90e2; /* Modern background color */
+  padding: 0.5em 1em; /* Adjusted padding for better spacing */
+  border-radius: 8px; /* Increased border-radius for a softer appearance */
+  margin-top: auto;
+  font-size: 14px; /* Slightly increased font size */
+  height: 28px; /* Adjusted height for better proportion */
+  font-weight: 600;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+}
